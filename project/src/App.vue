@@ -1,11 +1,21 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+  <div id='app'>
+    <transition name='page-fade' mode='out-in'>
+      <router-view/>
+    </transition>
   </div>
 </template>
 
 <script>
+import WebFont from 'webfontloader'
+
+WebFont.load({
+  custom: {
+    families: ['Sawarabi Gothic'],
+    urls: ['https://fonts.googleapis.com/css?family=Sawarabi+Gothic']
+  }
+})
+
 export default {
   name: 'App'
 }
@@ -13,11 +23,17 @@ export default {
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: 'Sawarabi Gothic';
+}
+body {
+  margin: 0px;
+}
+.page-fade-enter-active,
+.page-fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+.page-fade-enter,
+.page-fade-leave-to {
+  opacity: 0;
 }
 </style>
