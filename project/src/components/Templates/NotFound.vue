@@ -1,7 +1,7 @@
 <template>
 <div>
   <Header></Header>
-  <h1>Profile</h1>
+  <h1>NotFound</h1>
 </div>
 </template>
 
@@ -9,7 +9,7 @@
 import Header from '../Organisms/Header'
 
 export default {
-  name: 'Profile',
+  name: 'NotFound',
   components: {
     Header
   }

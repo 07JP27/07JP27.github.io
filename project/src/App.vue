@@ -22,6 +22,8 @@ export default {
 </script>
 
 <style>
+@import url('https://use.fontawesome.com/releases/v5.7.0/css/all.css');
+
 #app {
   font-family: 'Sawarabi Gothic';
 }
