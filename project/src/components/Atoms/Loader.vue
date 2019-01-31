@@ -12,14 +12,14 @@ export default {
 .loader,
 .loader:before,
 .loader:after {
-  background: #009ED9 ;
+  background: #0470dc ;
   -webkit-animation: load1 1s infinite ease-in-out;
   animation: load1 1s infinite ease-in-out;
   width: 1em;
   height: 4em;
 }
 .loader {
-  color: #009ED9 ;
+  color: #0470dc ;
   text-indent: -9999em;
   margin: 88px auto;
   position: relative;

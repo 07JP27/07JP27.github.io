@@ -23,7 +23,7 @@ export default {
 header {
   width: 100%;
   text-align: center;
-  background-color: #009ED9;
+  background-color: #0470dc;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   position: relative;
   top: 0px;
