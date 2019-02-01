@@ -1,14 +1,24 @@
 <template>
 <div class="background">
-    <div class="title">JP's Portfolio Site</div>
-    <div class="menu-wrapper">
-      <div>
-      <MenuButton url="/Peofile">Profile</MenuButton>
-      <MenuButton url="/Skillset">Skillset</MenuButton>
-      <MenuButton url="/Posts">Posts</MenuButton>
-      <MenuButton url="/Works">Works</MenuButton>
-      </div>
+  <b-container>
+    <div style="padding-top:15rem;">
+      <div class="title">JP's Portfolio Site</div>
+      <b-row>
+        <b-col class="button-wrap">
+          <MenuButton url="/Profile">Profile</MenuButton>
+        </b-col>
+        <b-col class="button-wrap">
+          <MenuButton url="/Skillset">Skillset</MenuButton>
+        </b-col>
+        <b-col class="button-wrap">
+          <MenuButton url="/Posts">Posts</MenuButton>
+        </b-col>
+        <b-col class="button-wrap">
+          <MenuButton url="/Works">Works</MenuButton>
+        </b-col>
+      </b-row>
     </div>
+  </b-container>
 </div>
 </template>
 
@@ -34,11 +44,12 @@ export default {
 .title{
   color: white;
   text-align: center;
-  margin: 0;
+  margin: 0 0 5rem 0;
   font-size: 3rem;
 }
 
-.menu-wrapper{
-   margin:  0 auto; 
+.button-wrap{
+  text-align: center;
+  padding: 15px;
 }
 </style>

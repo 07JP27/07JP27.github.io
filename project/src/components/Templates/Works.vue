@@ -1,51 +1,65 @@
 <template>
 <div>
   <Header></Header>
-  <div>
-    hogehoge
-  </div>
-  <div class="wrapper">
-    <div>
-      <h1>Application</h1>
-      <li>
-        <Box title="イベントアプリケーション" url="post.url" img="/static/qiita.png"></Box>
-      </li>
-    </div>
-    <div>
-      <h1>Web</h1>
-      <li>
-        <Box title="PRツールダウンロードセンター" url="post.url" img="/static/qiita.png"></Box>
-      </li>
-      <li>
-        <Box title="人形のかくに" url="post.url" img="/static/qiita.png"></Box>
-      </li>
-    </div>
-    <div>
-      <h1>Publish</h1>
-      <li>
-        <Box title="フライヤー" url="post.url" img="/static/qiita.png"></Box>
-      </li>
-    </div>
-    <div>
-      <h1>Other</h1>
-      <li>
-        <Box title="一眼レフカメラによる間接スキャン" url="post.url" img="/static/qiita.png"></Box>
-        <Box title="ドローンによる高解像度航空写真生成" url="post.url" img="/static/qiita.png"></Box>
-      </li>
-    </div>
-  </div>
+  <b-container>
+    <h1>Application</h1>
+    <b-card-group deck>
+      <WorkCard title="イベントアプリケーション" img="https://picsum.photos/300/300/?image=41">
+        This is a wider card with supporting text below as a
+        natural lead-in to additional content. This content
+        is a little bit longer.
+      </WorkCard>
+    </b-card-group>
+    <hr />
+    <h1>Web</h1>
+    <b-card-group deck>
+      <WorkCard title="PRツールダウンロードセンター" img="https://picsum.photos/300/300/?image=41">
+        This is a wider card with supporting text below as a
+        natural lead-in to additional content. This content
+        is a little bit longer.
+      </WorkCard>
+      <WorkCard title="人形のかくに" img="https://picsum.photos/300/300/?image=41">
+        This is a wider card with supporting text below as a
+        natural lead-in to additional content. This content
+        is a little bit longer.
+      </WorkCard>
+    </b-card-group>
+    <hr />
+    <h1>Publish</h1>
+    <b-card-group deck>
+      <WorkCard title="フライヤー" img="https://picsum.photos/300/300/?image=41">
+        This is a wider card with supporting text below as a
+        natural lead-in to additional content. This content
+        is a little bit longer.
+      </WorkCard>
+    </b-card-group>
+    <hr />
+    <h1>Other</h1>
+    <b-card-group deck style="margin-bottom:20px;">
+      <WorkCard title="一眼レフカメラによる間接スキャン" img="https://picsum.photos/300/300/?image=41">
+        This is a wider card with supporting text below as a
+        natural lead-in to additional content. This content
+        is a little bit longer.
+      </WorkCard>
+      <WorkCard title="ドローンによる高解像度航空写真生成" img="https://picsum.photos/300/300/?image=41">
+        This is a wider card with supporting text below as a
+        natural lead-in to additional content. This content
+        is a little bit longer.
+      </WorkCard>
+    </b-card-group>
+  </b-container>
 </div>
 </template>
 
 <script>
 import Header from '../Organisms/Header'
-import Box from '../Organisms/Box'
+import WorkCard from '../Organisms/WorkCard'
 
 export default {
   name: 'Works',
   components: {
     Header,
-    Box
+    WorkCard
   }
 }
 </script>

@@ -28,6 +28,7 @@ header {
   position: relative;
   top: 0px;
   z-index: 10;
+  margin-bottom:20px;
 }
 a {
   height: 7vh;

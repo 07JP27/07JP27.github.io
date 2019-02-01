@@ -2,17 +2,19 @@
 <div>
   <Header></Header>
   <Loader v-if="loading"></Loader>
-  <ul class="wrapper">
-    <li v-for="post in posts" :key="post.key">
-      <Box :title="post.title" :url="post.url" img="/static/qiita.png"></Box>
-    </li>
-  </ul>
+  <b-container>
+    <b-card-group deck>
+      <div v-for="post in posts" :key="post.key">
+        <QiitaCard :title="post.title" :url="post.url" img="/static/qiita.png"></QiitaCard>
+      </div>
+    </b-card-group>
+  </b-container>
 </div>
 </template>
 
 <script>
 import Header from '../Organisms/Header'
-import Box from '../Organisms/Box'
+import QiitaCard from '../Organisms/QiitaCard'
 import Loader from '../Atoms/Loader'
 
 import axios from 'axios';
@@ -21,7 +23,7 @@ export default {
   name: 'Posts',
   components: {
     Header,
-    Box,
+    QiitaCard,
     Loader
   },
   data () {
@@ -46,17 +48,4 @@ export default {
 </script>
 
 <style scoped>
-.wrapper{
-    padding: 0;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    list-style: none;
-}
 </style>
