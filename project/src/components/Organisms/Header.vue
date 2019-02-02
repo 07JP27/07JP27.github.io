@@ -45,6 +45,10 @@ header {
   font-size: 2rem;
 }
 
+.humberger-btn:hover{
+  background-color: transparent;
+}
+
 .humberger-btn:active{
   background-color: transparent !important;
 }
