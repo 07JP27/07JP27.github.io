@@ -5,7 +5,7 @@
     <b-card>
       <b-row>
         <b-col md="3" offset-md="0" sm="6" offset-sm="3">
-          <b-img fluid rounded="circle" src="/static/jp.jpg"></b-img>
+          <b-img fluid rounded="circle" src="static/jp.jpg"></b-img>
         </b-col>
         <b-col>
           <h1>JP</h1>

@@ -5,7 +5,7 @@
   <b-container>
     <b-card-group deck>
       <div v-for="post in posts" :key="post.key">
-        <QiitaCard :title="post.title" :url="post.url" img="/static/qiita.png"></QiitaCard>
+        <QiitaCard :title="post.title" :url="post.url" img="static/qiita.png"></QiitaCard>
       </div>
     </b-card-group>
   </b-container>
