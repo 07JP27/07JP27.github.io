@@ -68,6 +68,11 @@ a {
   display: inline-block;
 }
 
+a:hover{
+  color: white;
+  text-decoration: none;
+}
+
 /*スマートフォン*/
 @media (max-width: 670px) {
   .humberger-btn{
