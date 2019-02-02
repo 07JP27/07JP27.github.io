@@ -35,7 +35,6 @@ export default {
   mounted () {
     axios.get( 'https://qiita.com/api/v2/users/07JP27/items?per_page=100' )
         .then( ( res ) => {
-            console.log(res.data)
             this.loading = false;
             this.posts = res.data
         } )

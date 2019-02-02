@@ -1,8 +1,6 @@
 <template>
   <div id='app'>
-    <transition name='page-fade' mode='out-in'>
-      <router-view/>
-    </transition>
+    <router-view/>
   </div>
 </template>
 
@@ -11,8 +9,8 @@ import WebFont from 'webfontloader'
 
 WebFont.load({
   custom: {
-    families: ['Sawarabi Gothic'],
-    urls: ['https://fonts.googleapis.com/css?family=Sawarabi+Gothic']
+    families: ['Noto Sans Japanese'],
+    urls: ['https://fonts.googleapis.com/earlyaccess/notosansjapanese.css']
   }
 })
 
@@ -25,17 +23,9 @@ export default {
 @import url('https://use.fontawesome.com/releases/v5.7.0/css/all.css');
 
 #app {
-  font-family: 'Sawarabi Gothic';
+  font-family: 'Noto Sans Japanese';
 }
 body {
   margin: 0px;
-}
-.page-fade-enter-active,
-.page-fade-leave-active {
-  transition: opacity 0.3s ease;
-}
-.page-fade-enter,
-.page-fade-leave-to {
-  opacity: 0;
 }
 </style>

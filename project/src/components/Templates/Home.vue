@@ -1,7 +1,7 @@
 <template>
 <div class="background">
   <b-container>
-    <div style="padding-top:15rem;">
+    <div class="title-container">
       <div class="title">JP's Portfolio Site</div>
       <b-row>
         <b-col class="button-wrap">
@@ -41,6 +41,10 @@ export default {
   background:linear-gradient(135deg, #13f1fc 0%,#0470dc 100%);
 }
 
+.title-container{
+  padding-top:15rem;
+}
+
 .title{
   color: white;
   text-align: center;
@@ -51,5 +55,17 @@ export default {
 .button-wrap{
   text-align: center;
   padding: 15px;
+}
+
+/*スマートフォン*/
+@media (max-width: 670px) {
+  .title-container{
+    padding-top:2rem;
+  }
+
+  .title{
+    font-size: 2rem;
+    margin: 0 0 2rem 0;
+  }
 }
 </style>

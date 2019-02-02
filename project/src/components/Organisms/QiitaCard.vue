@@ -1,10 +1,9 @@
 <template>
   <div>
-    <a :href="url" >
+    <a :href="url" target="_blank">
     <b-card :title="title"
             :img-src="img"
             img-top
-            style="max-width: 15rem;"
             class="box mb-5">
       <p class="card-text">
         <slot></slot>
@@ -28,9 +27,20 @@ a{
 
 .box{
   color: black;
+  max-width: 12rem;
 }
 
 .box:hover {
     box-shadow: 0 1px 100px rgba(0,0,0,.1), 0 8px 200px rgba(0,0,0,.1);
+}
+
+.card-title{
+  font-size: 1rem;
+}
+
+@media (max-width: 670px) {
+  .box{
+    max-width: none;
+  }
 }
 </style>
