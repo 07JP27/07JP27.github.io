@@ -41,8 +41,8 @@ header {
   display: none;
   background-color: transparent;
   border: none;
-  height: 7vh;
-  font-size: 2rem;
+  height: 3rem;
+  font-size: 1.5rem;
 }
 
 .humberger-btn:hover{
