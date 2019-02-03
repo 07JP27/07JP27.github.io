@@ -4,17 +4,8 @@
     <div class="title-container">
       <div class="title">JP's Portfolio Site</div>
       <b-row>
-        <b-col class="button-wrap">
-          <MenuButton url="/Profile">Profile</MenuButton>
-        </b-col>
-        <b-col class="button-wrap">
-          <MenuButton url="/Skillset">Skillset</MenuButton>
-        </b-col>
-        <b-col class="button-wrap">
-          <MenuButton url="/Posts">Posts</MenuButton>
-        </b-col>
-        <b-col class="button-wrap">
-          <MenuButton url="/Works">Works</MenuButton>
+        <b-col class="button-wrap" :key='menuItem.link' v-for='menuItem in menuItems' transition="page-fade" stagger="100">
+          <MenuButton :url="menuItem.link" :label="menuItem.label"></MenuButton>
         </b-col>
       </b-row>
     </div>
@@ -29,6 +20,28 @@ export default {
   name: 'Home',
   components:{
     MenuButton
+  },
+  data () {
+    return {
+      menuItems: [
+        {
+          label: 'Profile',
+          link: '/profile'
+        },
+        {
+          label: 'Skillset',
+          link: '/skillset'
+        },
+        {
+          label: 'Posts',
+          link: '/posts'
+        },
+        {
+          label: 'Works',
+          link: '/works'
+        },
+      ]
+    }
   }
 }
 </script>
@@ -38,7 +51,7 @@ export default {
   width: 100vw;
   height: auto;
   min-height: 100vh;
-  background:linear-gradient(135deg, #13f1fc 0%,#0470dc 100%);
+  background:linear-gradient(120deg, #13f1fc 0%,#0470dc 60%,#02305e 100%);
 }
 
 .title-container{

@@ -2,7 +2,7 @@
   <div>
     <router-link :to="url">
       <b-button size="lg" variant="outline-success">
-        <slot></slot>
+        {{label}}
       </b-button>
     </router-link>
   </div>
@@ -11,7 +11,7 @@
 <script>
 export default {
   name: 'MenuButton',
-  props:['url']
+  props:['url','label']
 }
 </script>
 
