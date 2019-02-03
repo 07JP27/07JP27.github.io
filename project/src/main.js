@@ -7,9 +7,7 @@ import BootstrapVue from 'bootstrap-vue'
 import VueAnalytics from 'vue-analytics'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-import * as history from 'connect-history-api-fallback';
 
-Vue.use(history());
 Vue.use(VueAnalytics, {
   id: 'UA-133714539-1',
   router
