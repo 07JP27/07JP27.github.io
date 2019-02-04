@@ -43,7 +43,7 @@ export default {
   },
   methods: {
     beforeEnter (el) {
-      el.style.transitionDelay = 150 * parseInt(el.dataset.index, 10) + 'ms'
+      el.style.transitionDelay = 50 * parseInt(el.dataset.index, 10) + 'ms'
     },
     afterEnter (el) {
       el.style.transitionDelay = ''
@@ -61,6 +61,6 @@ export default {
   opacity: 1;
 }
 .v-enter-active {
-  transition: transform 500ms ease-out, opacity 200ms ease-out;
+  transition: transform 500ms ease-out, opacity 500ms ease-out;
 }
 </style>

@@ -9,6 +9,7 @@ import Profile from '@/components/Templates/Profile'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -34,11 +35,6 @@ export default new Router({
       path: '/profile',
       name: 'Profile',
       component: Profile
-    },
-    {
-      path: '*',
-      name: 'Home',
-      component: Home
     }
   ]
 })
