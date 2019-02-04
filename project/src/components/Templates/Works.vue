@@ -16,6 +16,10 @@
     <hr />
     <h1>Web</h1>
     <b-card-group deck>
+      <WorkCard title="Portfolio Site" img="static/portfolio.png">
+        Vue.jsを使用したポートフォリオサイト。Qiita APIを呼び出して記事を表示するなど様々な技術を使用している。<br />
+        制作：2019年<br />
+      </WorkCard>
       <WorkCard title="ボーイスカウト日本連盟　PRツールダウンロードセンター" img="static/saj-pr.png">
         ボーイスカウト日本連盟が発行する広報資材を誰でも自由にダウンロードできるサイトを制作。<br />
         データソースをGoogle Driveにすることでサーバー容量の削減を行った。<br />
