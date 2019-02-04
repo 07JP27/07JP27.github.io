@@ -1,6 +1,5 @@
 <template>
 <div>
-  <Header></Header>
   <b-container>
     <h1>Application</h1>
     <b-card-group deck>
@@ -56,13 +55,11 @@
 
 <script>
 import WorkCard from '../Organisms/WorkCard'
-import Header from '../Organisms/Header'
 
 export default {
   name: 'Works',
   components: {
-    WorkCard,
-    Header
+    WorkCard
   }
 }
 </script>

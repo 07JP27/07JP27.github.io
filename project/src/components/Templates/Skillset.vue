@@ -1,6 +1,5 @@
 <template>
 <div>
-  <Header></Header>
   <b-container>
     <b-card-group deck>
       <b-col md="6">
@@ -183,13 +182,11 @@
 </template>
 
 <script>
-import Header from '../Organisms/Header'
 import Skill from '../Organisms/Skill'
 
 export default {
   name: 'Skillset',
   components: {
-    Header,
     Skill
   }
 }

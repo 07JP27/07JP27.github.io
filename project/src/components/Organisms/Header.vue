@@ -3,7 +3,7 @@
   <b-btn v-b-toggle.menu class="humberger-btn"><i class="fas fa-bars"></i></b-btn>
   <b-collapse id="menu" class="humberger-menu">
     <ul>
-      <li><router-link to='/' style="cuesor:pointer">Home</router-link></li>
+      <li><router-link to='/' >Home</router-link></li>
       <li><router-link to='/profile'>Profile</router-link></li>
       <li><router-link to='/skillset'>Skillset</router-link></li>
       <li><router-link to='/posts'>Posts</router-link></li>

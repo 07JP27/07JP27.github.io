@@ -1,11 +1,15 @@
 <template>
   <div id='app'>
-    <router-view/>
+    <Header v-show="!this.isTopPage"></Header>
+    <transition name='page-fade' mode='out-in'>
+      <router-view/>
+    </transition>
   </div>
 </template>
 
 <script>
 import WebFont from 'webfontloader'
+import Header from './components/Organisms/Header'
 
 WebFont.load({
   custom: {
@@ -15,7 +19,15 @@ WebFont.load({
 })
 
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Header
+  },
+  computed: {
+    isTopPage () {
+      return this.$route.path === '/'
+    }
+  }
 }
 </script>
 
@@ -27,5 +39,14 @@ export default {
 }
 body {
   margin: 0px;
+}
+
+.page-fade-enter-active,
+.page-fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+.page-fade-enter,
+.page-fade-leave-to {
+  opacity: 0;
 }
 </style>

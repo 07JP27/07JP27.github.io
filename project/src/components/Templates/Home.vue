@@ -3,11 +3,11 @@
   <b-container>
     <div class="title-container">
       <div class="title">JP's Portfolio Site</div>
-      <b-row>
-        <b-col class="button-wrap" :key='menuItem.link' v-for='menuItem in menuItems' transition="page-fade" stagger="100">
-          <MenuButton :url="menuItem.link" :label="menuItem.label"></MenuButton>
-        </b-col>
-      </b-row>
+        <transition-group appear tag="div" class="row" @before-enter="beforeEnter" @after-enter="afterEnter" @enter-cancelled="afterEnter">
+          <b-col class="button-wrap" :data-index="index" :key='menuItem.link' v-for='(menuItem, index) in menuItems'>
+            <MenuButton :url="menuItem.link" :label="menuItem.label"></MenuButton>
+          </b-col>
+        </transition-group>
     </div>
   </b-container>
 </div>
@@ -42,6 +42,14 @@ export default {
         },
       ]
     }
+  },
+  methods: {
+    beforeEnter (el) {
+      el.style.transitionDelay = 150 * parseInt(el.dataset.index, 10) + 'ms'
+    },
+    afterEnter (el) {
+      el.style.transitionDelay = ''
+    }
   }
 }
 </script>
@@ -68,6 +76,18 @@ export default {
 .button-wrap{
   text-align: center;
   padding: 15px;
+}
+
+.v-enter {
+  transform: scale(0.5);
+  opacity: 0;
+}
+.v-enter-to {
+  transform: scale(1);
+  opacity: 1;
+}
+.v-enter-active {
+  transition: transform 300ms ease-out, opacity 300ms ease-out;
 }
 
 /*スマートフォン*/

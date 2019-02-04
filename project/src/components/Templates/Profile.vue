@@ -1,6 +1,5 @@
 <template>
 <div>
-  <Header></Header>
   <b-container>
     <b-card>
       <b-row>
@@ -38,13 +37,8 @@
 </template>
 
 <script>
-import Header from '../Organisms/Header'
-
 export default {
-  name: 'Profile',
-  components: {
-    Header
-  }
+  name: 'Profile'
 }
 </script>
 
