@@ -24,6 +24,7 @@
           </b-button-toolbar>
           <h5>Licence/Qualification</h5>
           <ul>
+            <li>日本ディープラーニング協会 E資格 2019#2</li>
             <li>基本情報技術者試験</li>
             <li>無人航空従事者試験３級</li>
             <li>普通自動車免許</li>
