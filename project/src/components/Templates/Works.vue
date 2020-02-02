@@ -12,6 +12,18 @@
         <b-link href="https://www.scout.or.jp/17nsj/app.html" target="_blank">アプリ紹介サイト</b-link><br />
         <b-link href="https://www.techsoupjapan.org/node/789162" target="_blank">テックスープジャパン事例</b-link>
       </WorkCard>
+      <WorkCard title="結婚式受付システム" img="static/w-reception.png">
+        結婚式での受付待ちによる参列者の負担軽減のためにQRコードを使ってリアルタイムかつ数秒で受付が完了する受付システムを開発・運用。
+        <br />
+        制作：2019年~2020年<br />
+        <b-link href="https://qiita.com/07JP27/items/8f687a7eb906e624f659" target="_blank">開発・運用について詳しく見る</b-link><br />
+      </WorkCard>
+      <WorkCard title="結婚式写真共有システム" img="static/w-photo-share.png">
+        結婚式での写真集約の負担をへらすために共有システムを開発・運用。スライドショー機能を実装することによって共有だけでなくスライドショー上映も可能になった。
+        <br />
+        制作：2019年~2020年<br />
+        <b-link href="https://qiita.com/07JP27/items/f84f68aaea2aeb444905" target="_blank">開発・運用について詳しく見る</b-link><br />
+      </WorkCard>
     </b-card-group>
     <hr />
     <h1>Web</h1>

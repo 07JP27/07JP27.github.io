@@ -48,7 +48,7 @@
             <hr />
             <Skill :rate="3">Apple Pages</Skill>
             <hr />
-            <Skill :rate="4">MS Flow</Skill>
+            <Skill :rate="4">MS Power Automate</Skill>
             <hr />
             <Skill :rate="3">MS PowerApps</Skill>
             <hr />
@@ -145,6 +145,24 @@
             <Skill :rate="3">Ubuntu</Skill>
             <hr />
             <Skill :rate="3">Cent OS</Skill>
+          </b-card>
+        </b-collapse>
+      </b-col>
+      <b-col md="6">
+        <div v-b-toggle.Azure class="collapse-btn card-header">
+          Firebase
+        </div>
+        <b-collapse visible id="Firebase">
+          <b-card class="collapse-card">
+            <Skill :rate="4">Authentication</Skill>
+            <hr />
+            <Skill :rate="4">Firestore</Skill>
+            <hr />
+            <Skill :rate="2">Storage</Skill>
+            <hr />
+            <Skill :rate="2">Hosting</Skill>
+            <hr />
+            <Skill :rate="2">Function</Skill>
           </b-card>
         </b-collapse>
       </b-col>
