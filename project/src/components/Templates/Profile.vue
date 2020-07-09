@@ -15,6 +15,9 @@
             <a href="https://qiita.com/07JP27" target="_blank">
               <b-button class="mx-1 qt-btn">Qiita</b-button>
             </a>
+            <a href="https://www.linkedin.com/in/junpei-tsuchida-4631a6158/" target="_blank">
+              <b-button class="mx-1 lnki-btn"><i class="fab fa-linkedin"></i> Linkedin</b-button>
+            </a>
             <a href="https://twitter.com/07JP27" target="_blank">
               <b-button class="mx-1 twr-btn"><i class="fab fa-twitter"></i> Twitter</b-button>
             </a>
@@ -67,6 +70,16 @@ export default {
 .qt-btn:not(:disabled):not(.disabled):active{
   background-color: #4cb10d;
   border-color: #4cb10d;
+}
+
+.lnki-btn{
+  background-color: #2867B2;
+  border-color: #2867B2;
+}
+
+.lnki-btn:not(:disabled):not(.disabled):active{
+  background-color: #2867B2;
+  border-color: #2867B2;
 }
 
 .twr-btn{
